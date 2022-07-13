@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+  color:#fff;
+  text-align: left;
+  font-size:1rem;
+  line-height: 1.6rem;
+  background: url("./assets/images/bg01.jpg") no-repeat center center/cover;
+  
+}
+
+img {
+    max-width: 100%;
+}
+
+h1{
+    font-size:55px;
+}
+
+#overlay {
+    background-color: rgba(28, 44, 44, 0.9); 
+    width:100%  ;
+    height:100% ;
+    padding-left:40px;
+    display:flex;
+    flex-direction:column;
+    align-items: flex-start;
+    justify-content:space-around;
+}
+
+main {
+    display:flex;
+    flex-direction:column;
+    align-items: flex-start;
+    gap:25px;
+    margin-top:25vh;
+    justify-content:space-between;
+    
+}
+#email {
+    padding: 0 1em;
+    background-color: transparent;
+    font-size: 16px;
+    color: #ffffff;
+    border-radius: 6px;
+    border: solid 2px rgba(255, 255, 255, 0.35);
+    width: 18em;
+    height:2.75em;
+}
+#submit{
+    background-color: #1cb495;
+    font-size: 12pt;
+    color:#fff;
+    border-style: solid;
+    border-color: #1cb495;
+    border-radius: 6px;
+    margin-left: 10px;
+    font-weight: 700;
+    height: 2.75em;
+    line-height: 2.75em;
+    padding: 0 1.125em;
+    text-align: center;
+}
+
+footer {
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:flex-start;
+    gap:20px;
+    
+}
+
+a {
+    text-decoration: none;
+    color:inherit;
+}
+.social {
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+.credits {
+    display:flex;
+    list-style:none;
+    gap: 5px;
+    font-size:0.8rem;
+}
+.fa-regular,.fa-brands {
+    color:white;
+    font-size:20px;
+}
+.underline {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 1px;
+}
+
+@media  (max-width: 480px) {
+    body {
+        justify-content:center;
+    }
+    h1 {
+        display: none;
+    }
+    
+    p {
+        display: none;
+    }
+
+    main,footer,#overlay {
+        align-items: center;
+    }
+    #overlay{
+        padding-left:0;
+    }
+    #email{
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    #submit{
+        display: block;
+        width: 100%;
+        margin-left: 0;
+    }
+    
+}

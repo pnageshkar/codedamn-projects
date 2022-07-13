@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>Quiz</title>
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <a id="leaderboard" href="./leaderboard.html"
+          >View Highscores <i class="fas fa-hand-point-left fa-lg"></i
+        ></a>
+      </div>
+      <div class="timer">Time remaining: <span class="remtime"></span></div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="quiz">
+          <h2 class="question"></h2>
+          <div class="options">
+            <p class="option" data-num="1"></p>
+            <p class="option" data-num="2"></p>
+            <p class="option" data-num="3"></p>
+            <p class="option" data-num="4"></p>
+          </div>
+          <p class="answer"></p>
+        </div>
+      </div>
+    </main>
+    <script src="/Javascript/quiz.js"></script>
+  </body>
+</html>
