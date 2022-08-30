@@ -1,0 +1,164 @@
+:root {
+  --back-prim-color: white;
+  --back-prim-color-alt: #c0cedd;
+  --font-prim-color: rgb(19, 17, 17);
+  --our-gray: #6e767a;
+  --our-blue: #1d9bf0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.signin {
+  /* width: 100vw;*/
+  height: 100vh;
+  /* border: solid black; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.signin-container {
+  width: 80%;
+  height: 80%;
+  /* border: solid teal; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.signin-left {
+  /* border: solid blue; */
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 1rem;
+}
+.signin-right {
+  display: flex;
+  width: 100%;
+  /* border: solid blue; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.signin-left-container {
+  display: flex;
+  min-width: 70%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.signin-app-name {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--our-blue);
+  text-align: center;
+}
+
+.signin-cta-text1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.signin-cta-text2 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.signin-form {
+  padding: 1rem;
+  min-width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.signin-input {
+  height: 2.5rem;
+  min-width: 90%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--our-gray);
+  font-size: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.signin-input:focus {
+  outline: none;
+}
+
+.signin-btn {
+  height: 2.5rem;
+  border-radius: 2rem;
+  border: none;
+  background-color: var(--our-blue);
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.line-separator {
+  margin: 0.5rem;
+  border-top: var(--our-gray);
+}
+/* .signin-btn:focus {
+  outline: none;
+}
+
+.signin-btn:disabled {
+  cursor: not-allowed;
+} */
+
+.signin-forgotpwd {
+  text-align: center;
+  color: var(--our-blue);
+}
+
+.signup-btn {
+  min-width: 100%;
+  height: 2.5rem;
+  border-radius: 2rem;
+  border: none;
+  background-color: var(--our-blue);
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.err-message {
+  color: Red;
+}
+
+@media screen and (min-width: 1000px) {
+  .signin-container {
+    /* border: solid red; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .signin-left-container {
+    display: flex;
+    /* border: solid tomato; */
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 0;
+    gap: 1rem;
+  }
+}

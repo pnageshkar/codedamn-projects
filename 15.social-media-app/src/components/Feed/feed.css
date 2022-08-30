@@ -1,0 +1,27 @@
+:root {
+  --back-prim-color: white;
+  --back-prim-color-alt: #c0cedd;
+  --font-prim-color: rgb(19, 17, 17);
+  --our-blue: #1da1f2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.feed {
+  flex: 50%;
+  /* border: solid red; */
+  padding-right: 1rem;
+  padding: 0.5rem;
+}
+
+@media screen and (min-width: 600px) and (max-width: 992px) {
+  .feed {
+    flex: 80%;
+    max-width: 70%;
+  }
+}

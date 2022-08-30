@@ -1,0 +1,19 @@
+:root {
+  --back-prim-color: white;
+  --back-prim-color-alt: #c0cedd;
+  --font-prim-color: rgb(19, 17, 17);
+  --our-blue: #1da1f2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.main-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}

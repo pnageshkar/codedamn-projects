@@ -1,0 +1,154 @@
+:root {
+  --back-prim-color: white;
+  --back-prim-color-alt: #c0cedd;
+  --font-prim-color: rgb(19, 17, 17);
+  --our-gray: #6e767a;
+  --our-blue: #1d9bf0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.signup {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup-container {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.signup-left {
+  display: flex;
+  /* border: solid blue; */
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 1rem;
+}
+.signup-right {
+  display: flex;
+  /* border: solid blue; */
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.signup-left-container {
+  display: flex;
+  /* border: solid brown; */
+  min-width: 70%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.signup-app-name {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--our-blue);
+  text-align: center;
+}
+
+.signup-cta-text1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.signup-cta-text2 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.signup-form {
+  padding: 1rem;
+  min-width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.signup-input {
+  height: 2.5rem;
+  min-width: 90%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--our-gray);
+  font-size: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.signup-input:focus {
+  outline: none;
+}
+
+.signup-btn {
+  height: 2.5rem;
+  border-radius: 2rem;
+  border: none;
+  background-color: var(--our-blue);
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* .signup-btn:focus {
+  outline: none;
+}
+
+.signup-btn:disabled {
+  cursor: not-allowed;
+} */
+
+.signup-btn {
+  min-width: 100%;
+  height: 2.5rem;
+  border-radius: 2rem;
+  border: none;
+  background-color: var(--our-blue);
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.err-message {
+  color: Red;
+}
+
+@media screen and (min-width: 1000px) {
+  .signup-container {
+    /* border: solid red; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .signup-left-container {
+    display: flex;
+    /* border: solid tomato; */
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 0;
+    gap: 2rem;
+  }
+}

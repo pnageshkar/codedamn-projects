@@ -1,0 +1,30 @@
+:root {
+  --back-prim-color: white;
+  --back-prim-color-alt: #c0cedd;
+  --font-prim-color: rgb(19, 17, 17);
+  --our-gray: #6e767a;
+  --our-blue: #1da1f2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+.pagenotfound {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 8rem;
+}
+h3 {
+  color: var(--our-blue);
+  font-size: 5rem;
+  margin-bottom: 1.5rem;
+}

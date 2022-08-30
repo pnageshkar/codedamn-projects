@@ -1,0 +1,22 @@
+.leftsidebar {
+  flex: 25%;
+  height: 100vh;
+  background-color: tomato;
+}
+
+.left-container {
+  padding: 20px;
+}
+.left-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.listitem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.left-icon {
+  margin-right: 15px;
+}
